@@ -1,3 +1,18 @@
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 20px;
+  color: red;
+  z-index: 1;
+  cursor: pointer;
+}
+
 .travel-card {
   width: 300px;
   border: 1px solid #ddd;
