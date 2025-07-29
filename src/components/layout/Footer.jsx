@@ -68,18 +68,24 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         width: '100%',
-        position: 'fixed',
+        position: 'relative',
         background: colors.black,
         left: 0,
         bottom: 0,
         justifyContent: 'center',
         alignItems: 'center',
-        height: '200px'
+        height: '200px',
+        boxSizing: 'border-box',
     },
     container: {
         display: 'grid',
         gridTemplateColumns: 'repeat(4, 1fr)',
-        gap: '2rem'
+        gap: '2rem',
+        maxWidth: '1280px',
+        width: '100%',
+        margin: '0 auto',
+        padding: '0 16px',
+        boxSizing: 'border-box',
     },
     logo: {
         color: colors.white,

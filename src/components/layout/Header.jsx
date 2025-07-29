@@ -1,20 +1,28 @@
 import { useState } from 'react';
 import colors from "../../constants/Colors";
-import useIsMobile from '../../hooks/UseIsMobile';
+import { useBreakpoints } from '../../hooks/UseIsMobile'; // cập nhật nếu file đổi tên
 
 const Header = () => {
     const [active, setActive] = useState('Home');
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const isMobile = useIsMobile();
+    const { isMobile, isTablet } = useBreakpoints();
+
+    const isCompact = isMobile || isTablet;
 
     return (
         <header style={styles.wrapper}>
-            <div style={styles.container}>
+            <div
+                style={{
+                    ...styles.container,
+                    margin: '0 auto',
+                    padding: isCompact ? '0 12px' : '0 16px',
+                }}
+            >
                 <div style={styles.logo}>
                     <span>kt.</span>
                 </div>
 
-                {!isMobile && (
+                {!isCompact && (
                     <nav style={styles.nav}>
                         {['Home', 'Stays', 'Flights', 'Packages', 'Sign Up'].map((label) => (
                             <NavItem
@@ -27,10 +35,11 @@ const Header = () => {
                     </nav>
                 )}
 
-                {isMobile && (
+                {isCompact && (
                     <button
                         style={styles.mobileMenuBtn}
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
+                        aria-label="Toggle menu"
                     >
                         <span style={{ ...styles.hamburger, transform: isMenuOpen ? 'rotate(45deg) translateY(6px)' : 'none' }}></span>
                         <span style={{ ...styles.hamburger, opacity: isMenuOpen ? 0 : 1 }}></span>
@@ -39,7 +48,7 @@ const Header = () => {
                 )}
             </div>
 
-            {isMobile && isMenuOpen && (
+            {isCompact && isMenuOpen && (
                 <nav style={styles.mobileNav}>
                     {['Home', 'Stays', 'Flights', 'Packages', 'Sign Up'].map((label) => (
                         <NavItem
@@ -89,9 +98,8 @@ const styles = {
         flexDirection: 'column',
         background: colors.black,
         width: '100%',
-        position: 'fixed',
-        top: 0,
-        left: 0,
+        position: 'relative',
+        margin: 0,
         zIndex: 1000,
         overflowX: 'hidden',
         boxSizing: 'border-box',
@@ -102,10 +110,7 @@ const styles = {
         alignItems: 'center',
         width: '100%',
         maxWidth: '1280px',
-        margin: '0 auto',
-        padding: '0 16px',
         height: '80px',
-        position: 'relative',
         boxSizing: 'border-box',
     },
     logo: {
