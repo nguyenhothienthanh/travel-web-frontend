@@ -9,14 +9,14 @@ import DetailsPage from './pages/DetailsPage'
 function App() {
 
   return (
-    <div style={{ margin: 0,}}>
+    <>
     {/* <Header/>
     <SearchBar/>
     <TopCategory/> */}
     {/* <TravelCard/> */}
     {/* <Footer/> */}
     <DetailsPage/>
-    </div>
+    </>
       
   )
 }

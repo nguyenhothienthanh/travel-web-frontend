@@ -1,4 +1,5 @@
 import FAQAccordion from "../components/detail/FAQ"
+import PlaceCardsCarousel from "../components/detail/PlaceCardsCarousel"
 import PlacesCarousel from "../components/detail/PlacesCarousel"
 import VisitorsReview from "../components/detail/VisitorsReview"
 import Footer from "../components/layout/Footer"
@@ -9,7 +10,7 @@ const DetailsPage = () => {
     // eslint-disable-next-line no-unused-vars
     const { isMobile, isTablet } = useBreakpoints();
     return (
-        <div style={{ width: "100%", fontFamily: 'Poppins, -apple-system, Roboto, sans-serif' }}>
+        <div style={{ width: "100%", fontFamily: 'Poppins, -apple-system, Roboto, sans-serif', overflowX: 'hidden', overflowY: 'scroll', scrollbarWidth: 'none', scrollBehavior: 'smooth' }}>
             <Header />
             <div
                 style={{
@@ -17,7 +18,8 @@ const DetailsPage = () => {
                     maxWidth: '1280px',
                     margin: isMobile ? '0 0' : '0 auto',
                     padding: isMobile ? '0 12px' : '0 16px',
-                    boxSizing: 'border-box'
+                    boxSizing: 'border-box',
+                    overflowX: 'hidden'
                 }}
             >
                 <h2 style={{
@@ -126,6 +128,15 @@ const DetailsPage = () => {
 
                 <div style={{ borderTop: `1px solid ${colors.grayLight}`, marginTop: "32px" }}>
                     <VisitorsReview />
+                </div>
+                <div style={{ borderTop: `1px solid ${colors.grayLight}`, marginTop: "32px", marginBottom: "32px" }}>
+                    <h2 style={{
+                        fontSize: isMobile ? "22px" : "28px",
+                        fontWeight: "bold",
+                        color: colors.black,
+                        marginBottom: "20px",
+                    }}>You might like this ...</h2>
+                    <PlaceCardsCarousel />
                 </div>
             </div>
             <Footer />
