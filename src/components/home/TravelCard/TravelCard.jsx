@@ -20,7 +20,7 @@ const TravelCard = () => {
           <h2 className="travel-card__title">Phong Nha Cave</h2>
           <div className="travel-card__rating">
             <FaStar color="#facc15" />
-            <span>4.7</span>
+            <span style={{ color: "black" }}>5.0</span>
           </div>
         </div>
 

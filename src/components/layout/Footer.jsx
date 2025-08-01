@@ -1,4 +1,4 @@
-import colors from "../../constants/Colors"
+import colors from "../../constants/Colors";
 import { useBreakpoints } from "../../hooks/UseIsMobile";
 
 const Footer = () => {
@@ -68,7 +68,7 @@ const styles = {
         display: 'flex',
         flexDirection: 'column',
         width: '100%',
-        position: 'fixed',
+        position: 'relative',
         background: colors.black,
         left: 0,
         bottom: 0,
