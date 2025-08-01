@@ -1,7 +1,16 @@
 import { FaHeart, FaHiking, FaHotel, FaPlane, FaShuttleVan, FaStar } from 'react-icons/fa';
 import './TravelCard.css';
 
-const TravelCard = () => {
+const TravelCard = ({ image,
+  title,
+  rating,
+  duration,
+  flights,
+  hotels,
+  transfers,
+  activities,
+  description,
+  price }) => {
   return (
     <div className="travel-card" style={{ padding: "10px" }}>
       {/* Image */}
