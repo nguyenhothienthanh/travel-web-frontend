@@ -37,7 +37,7 @@ const Footer = () => {
                         <li style={styles.aboutText}>kt. Co., Ltd.</li>
                         <li style={styles.aboutText}>123 Adventure Street, Wander City, Country</li>
                         <li style={styles.aboutText}>📞 +1 234 567 890</li>
-                        <li style={styles.aboutText}>📧 support@vndot.com</li>
+                        <li style={styles.aboutText}>📧 support@ktdot.com</li>
                         <li style={styles.aboutText}>🕒 Mon - Fri: 9:00 AM – 6:00 PM</li>
                     </ul>
                 </div>
@@ -45,16 +45,16 @@ const Footer = () => {
                     <span style={styles.aboutTitle}>Social Media</span>
                     <ul style={styles.socialList}>
                         <li style={styles.socialItem}>
-                            <img src="src\assets\icons\facebook.png" alt="Facebook" style={styles.socialIcon} />
+                            <img src="/assets/icons/facebook.png" alt="Facebook" style={styles.socialIcon} />
                         </li>
                         <li style={styles.socialItem}>
-                            <img src="src\assets\icons\instagram.png" alt="Instagram" style={styles.socialIcon} />
+                            <img src="/assets/icons/instagram.png" alt="Instagram" style={styles.socialIcon} />
                         </li>
                         <li style={styles.socialItem}>
-                            <img src="src\assets\icons\twitter.png" alt="Twitter" style={styles.socialIcon} />
+                            <img src="/assets/icons/twitter.png" alt="Twitter" style={styles.socialIcon} />
                         </li>
                         <li style={styles.socialItem}>
-                            <img src="src\assets\icons\youtube.png" alt="YouTube" style={styles.socialIcon} />
+                            <img src="/assets/icons/youtube.png" alt="YouTube" style={styles.socialIcon} />
                         </li>
                     </ul>
                 </div>

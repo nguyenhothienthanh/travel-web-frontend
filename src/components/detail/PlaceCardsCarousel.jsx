@@ -44,7 +44,7 @@ const PlaceCardsCarousel = () => {
 
   const travelData = [
     {
-      image: "src/assets/images/dongphongnha.jpg",
+      image: "/assets/images/dongphongnha.jpg",
       title: "Phong Nha Cave",
       rating: 4.7,
       duration: "3 Days 4 Nights",
@@ -60,7 +60,7 @@ const PlaceCardsCarousel = () => {
       price: "₹88,952"
     },
     {
-      image: "src/assets/images/vinhhalong.png",
+      image: "/assets/images/vinhhalong.png",
       title: "Ha Long Bay",
       rating: 4.9,
       duration: "2 Days 3 Nights",
@@ -76,7 +76,7 @@ const PlaceCardsCarousel = () => {
       price: "₹75,500"
     },
     {
-      image: "src/assets/images/vinhhalong.png",
+      image: "/assets/images/vinhhalong.png",
       title: "Ha Long Bay",
       rating: 4.9,
       duration: "2 Days 3 Nights",
@@ -92,7 +92,7 @@ const PlaceCardsCarousel = () => {
       price: "₹75,500"
     },
     {
-      image: "src/assets/images/vinhhalong.png",
+      image: "/assets/images/vinhhalong.png",
       title: "Ha Long Bay",
       rating: 4.9,
       duration: "2 Days 3 Nights",
@@ -108,7 +108,7 @@ const PlaceCardsCarousel = () => {
       price: "₹75,500"
     },
     {
-      image: "src/assets/images/vinhhalong.png",
+      image: "/assets/images/vinhhalong.png",
       title: "Ha Long Bay",
       rating: 4.9,
       duration: "2 Days 3 Nights",

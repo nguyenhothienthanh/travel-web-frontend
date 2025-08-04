@@ -10,16 +10,16 @@ const TopCategory = () => {
     };
 
     const categories = [
-        { iconUrl: "src/assets/icons/beach.png", label: "Beaches" },
-        { iconUrl: "src/assets/icons/deserts.png", label: "Deserts" },
-        { iconUrl: "src/assets/icons/deserts.png", label: "Cruises" },
-        { iconUrl: "src/assets/icons/deserts.png", label: "Islands" },
-        { iconUrl: "src/assets/icons/deserts.png", label: "Castles" },
-        { iconUrl: "src/assets/icons/deserts.png", label: "Canyons" },
-        { iconUrl: "src/assets/icons/deserts.png", label: "Countryside" },
-        { iconUrl: "src/assets/icons/deserts.png", label: "Camping" },
-        { iconUrl: "src/assets/icons/deserts.png", label: "Tropical" },
-        { iconUrl: "src/assets/icons/deserts.png", label: "Mountains" },
+        { iconUrl: "/assets/icons/beach.png", label: "Beaches" },
+        { iconUrl: "/assets/icons/deserts.png", label: "Deserts" },
+        { iconUrl: "/assets/icons/deserts.png", label: "Cruises" },
+        { iconUrl: "/assets/icons/deserts.png", label: "Islands" },
+        { iconUrl: "/assets/icons/deserts.png", label: "Castles" },
+        { iconUrl: "/assets/icons/deserts.png", label: "Canyons" },
+        { iconUrl: "/assets/icons/deserts.png", label: "Countryside" },
+        { iconUrl: "/assets/icons/deserts.png", label: "Camping" },
+        { iconUrl: "/assets/icons/deserts.png", label: "Tropical" },
+        { iconUrl: "/assets/icons/deserts.png", label: "Mountains" },
     ];
 
     return (

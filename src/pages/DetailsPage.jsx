@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import FAQAccordion from "../components/detail/FAQ"
 import PlaceCardsCarousel from "../components/detail/PlaceCardsCarousel"
 import PlacesCarousel from "../components/detail/PlacesCarousel"
@@ -6,9 +7,11 @@ import Footer from "../components/layout/Footer"
 import Header from "../components/layout/header"
 import colors from "../constants/Colors"
 import { useBreakpoints } from "../hooks/UseIsMobile"
+import { useParams } from "react-router-dom"
 const DetailsPage = () => {
     // eslint-disable-next-line no-unused-vars
     const { isMobile, isTablet } = useBreakpoints();
+    const { destinationName } = useParams()
     return (
         <div style={{ width: "100%", fontFamily: 'Poppins, -apple-system, Roboto, sans-serif', overflowX: 'hidden', overflowY: 'scroll', scrollbarWidth: 'none', scrollBehavior: 'smooth' }}>
             <Header />
