@@ -8,11 +8,13 @@ import Header from './components/layout/Header'
 import DetailsPage from './pages/DetailsPage'
 import Home from './pages/Home'
 import ListPage from './pages/ListPage'
+import LoginPage from './pages/LoginPage'
+import SignupPage from './pages/SignupPage'
 function App() {
 
   return (
     <>
-      <ListPage/>
+      <SignupPage/>
     </>
       
   )
