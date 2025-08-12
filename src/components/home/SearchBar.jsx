@@ -49,7 +49,7 @@ const SearchBar = () => {
                     }}
                 >
                     <img
-                        src="src/assets/icons/search.png"
+                        src="/assets/icons/search.png"
                         alt="Search Icon"
                         style={{ width: "22px", height: "22px", opacity: 0.7 }}
                     />
@@ -81,7 +81,7 @@ const SearchBar = () => {
                     }}
                 >
                     <img
-                        src="src/assets/icons/calendar.png"
+                        src="/assets/icons/calendar.png"
                         alt="Check-in Icon"
                         style={{ width: "22px", height: "22px", opacity: 0.7 }}
                     />
@@ -107,7 +107,7 @@ const SearchBar = () => {
                     }}
                 >
                     <img
-                        src="src/assets/icons/calendar.png"
+                        src="/assets/icons/calendar.png"
                         alt="Check-out Icon"
                         style={{ width: "22px", height: "22px", opacity: 0.7 }}
                     />
@@ -133,7 +133,7 @@ const SearchBar = () => {
                     }}
                 >
                     <img
-                        src="src/assets/icons/guest.png"
+                        src="/assets/icons/guest.png"
                         alt="Guests Icon"
                         style={{ width: "22px", height: "22px", opacity: 0.7 }}
                     />

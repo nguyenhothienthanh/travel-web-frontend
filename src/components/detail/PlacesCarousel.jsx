@@ -29,10 +29,10 @@ const PlacesCarousel = () => {
     };
 
     const images = [
-        "src/assets/images/dongphongnha.jpg",
-        "src/assets/images/vinhhalong.png",
-        "src/assets/images/dongphongnha.jpg",
-        "src/assets/images/vinhhalong.png",
+        "/assets/images/dongphongnha.jpg",
+        "/assets/images/vinhhalong.png",
+        "/assets/images/dongphongnha.jpg",
+        "/assets/images/vinhhalong.png",
     ];
 
     return (
