@@ -3,7 +3,7 @@ import PlaceCardsCarousel from "../components/detail/PlaceCardsCarousel"
 import PlacesCarousel from "../components/detail/PlacesCarousel"
 import VisitorsReview from "../components/detail/VisitorsReview"
 import Footer from "../components/layout/Footer"
-import Header from "../components/layout/header"
+import Header from "../components/layout/Header"
 import colors from "../constants/Colors"
 import { useBreakpoints } from "../hooks/UseIsMobile"
 const DetailsPage = () => {

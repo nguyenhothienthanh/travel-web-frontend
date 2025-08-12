@@ -1,0 +1,116 @@
+.travel-card-horizontal {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  padding: 10px;
+  gap: 16px;
+}
+
+.travel-image-wrapper {
+  position: relative;
+  flex: 0 0 230px;
+}
+
+.travel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border-radius: 50%;
+  padding: 5px;
+  color: red;
+  font-size: 18px;
+}
+
+.travel-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.travel-location {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 4px;
+}
+
+.travel-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.travel-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.travel-description {
+  font-size: 14px;
+  color: #444;
+  margin: 6px 0;
+}
+
+.travel-tags {
+  margin-top: auto;
+}
+
+.tag {
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.best-price {
+  color: orange;
+}
+
+.free-cancel {
+  color: red;
+}
+
+.travel-price-section {
+  flex: 0 0 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.travel-duration {
+  font-size: 14px;
+  color: gray;
+}
+
+.old-price {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.new-price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.view-details {
+  margin-top: 8px;
+  background: white;
+  border: 1px solid orange;
+  color: orange;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
