@@ -32,7 +32,7 @@ const Home = () => {
       {/* Banner Header */}
       <div
         style={{
-          backgroundImage: "url('src/assets/images/banner.jpg')",
+          backgroundImage: "url('public/assets/images/banner.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           minHeight: isMobile ? "400px" : "600px",

@@ -19,7 +19,7 @@ const ListPage = () => {
   // Dữ liệu giả
   const travelData = Array.from({ length: 20 }).map((_, idx) => ({
     id: idx + 1,
-    image: "src/assets/images/dongphongnha.jpg",
+    image: "assets/images/dongphongnha.jpg",
     location: "Paris, France",
     title:
       "Phi Phi Islands Adventure Day Trip with Seaview Lunch by V. Marine Tour",

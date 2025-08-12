@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../components/layout/header';
+import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import colors from '../constants/Colors';
 import MapSection from '../components/profile/Map';
